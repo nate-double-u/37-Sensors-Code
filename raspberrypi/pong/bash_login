@@ -1,0 +1,4 @@
+# /home/pi/.bash_login - automatically start pong game on login 
+
+python /home/pi/makesensors/pong/pong.py
+

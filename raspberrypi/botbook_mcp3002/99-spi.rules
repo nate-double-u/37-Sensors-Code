@@ -1,0 +1,4 @@
+# /etc/udev/rules.d/99-spi.rules - SPI without root on Raspberry Pi
+# Copyright 2013 http://BotBook.com
+
+SUBSYSTEM=="spidev", MODE="0666"

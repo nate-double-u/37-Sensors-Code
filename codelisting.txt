@@ -1,0 +1,105 @@
+# Codes for "Make Sensors" - http://BotBook.com
+
+## arduino/ ##
+
+ hall_sensor/hall_sensor.ino - print raw value and magnets pole
+ ky_026_flame/ky_026_flame.ino - report level IR light from flame to serial
+ hellorgb/hellorgb.ino - mix colors with RGB LED
+ hall_switch/hall_switch.ino - write to serial if magnet triggers the switch
+ line_sensor_black_or_white/line_sensor_black_or_white.ino - line follow sensor. Signal low when over black line.
+ wiichuck_adapter_claw/wiichuck_adapter_claw.ino - control robot hand with Nunchuck
+ mq_x_smoke_sensor/mq_x_smoke_sensor.ino - print smoke level to serial
+ wiichuck_adapter/wiichuck_adapter.ino - print joystick, accelerometer and button data to serial
+ ky_023_xyjoystick/ky_023_xyjoystick.ino - print joystick position to serial
+ attopilot_voltage/attopilot_voltage.ino - measure current and voltage with Attopilot 13.6V/45A
+ parallax_PIR_revA_cheating_pir/parallax_PIR_revA_cheating_pir.ino - light an LED when movement detected
+ dht11/dht11.ino - print humidity and temperature using DHT11 sensor
+ chameleon_dome/chameleon_dome.ino - cube changes color to match the surface
+ tilt_sensor/tilt_sensor.ino - detect tilting and print to serial
+ pot/pot.ino - control LED blinking speed with potentiometer
+ temperature_lm35/temperature_lm35.ino - measure temperature (Celsius) with LM35 and print it
+ qt113/qt113.ino - qt113 touch sensor
+ follow_light_with_servo/follow_light_with_servo.ino - follow light with servo
+ mq_3_alcohol_sensor/mq_3_alcohol_sensor.ino - print alcohol value and limit digital info.
+ keypad/keypad.ino - read 16-key numeric keypad (dx.com sku 149608)
+ soil_humidity_sensor/soil_humidity_sensor.ino - read soil humidity by measuring its resistance.
+ diy_capacitive_sensor/diy_capacitive_sensor.ino - measure touch
+ adjustable_infrared_sensor_switch/adjustable_infrared_sensor_switch.ino - print detection to serial and light LED.
+ gy_65/gy_65.ino - print altitude, pressure and temperature with GY-65 BMP085
+ button/button.ino - light an LED by pressing a button
+ servo_range/servo_range.ino - turn servo and print values to serial
+ microphone_can_you_hear_pin_drop/microphone_can_you_hear_pin_drop.ino - print to serial when sound is heard
+ piezo_alarmtone/piezo_alarmtone.ino - use piezospeaker to sound alarm sound
+ lsm303/lsm303.ino - normal use and calibration of LSM303DLH compass-accelerometer
+ distance_ping/distance_ping.ino - distance using ultrasonic ping sensor
+ color_sensor/color_sensor.ino - sense color with HDJD-S822-QR999 and print RGB value
+ posture_alarm/posture_alarm.ino - sound an alarm when IR switch detects bad posture
+ blink/blink.ino - blink L LED to test development environment
+ mpu_6050/mpu_6050.ino - print acceleration (m/s**2) and angular velocity (gyro, deg/s)
+ flexiforce_25/flexiforce_25.ino - send flexiforce squeeze values to computer serial monitor
+ ldr_light_sensor/ldr_light_sensor.ino - report high level of light with built-in LED
+ hc_sr04/hc_sr04.ino - print distance to serial
+ weather_station/weather_station.ino - print weather data to epaper
+ vibration_sensor/vibration_sensor.ino - detect vibration using interrupt
+ compound_eye/compound_eye.ino - print distance and direction values to serial
+ haunted_bell/haunted_bell.ino - bell rings just before you touch it
+ piezo_beep/piezo_beep.ino - beep on a given frequency with a piezo speaker
+ fingerprint_scanner/fingerprint_scanner.ino - learn and recognize fingerprints with GT-511C3
+ microphone_sound_detection_module/microphone_sound_detection_module.ino - use interrupt to head sound triggering
+ microswitch/microswitch.ino - print to serial if microswitch is down or up
+ rfid_reader/rfid_reader.ino - read 125 kHz RFID tags with ELB149C5M electronic brick
+ rotary_encoder/rotary_encoder.ino - print encoder position
+ parallax_pir_reva/parallax_pir_reva.ino - print movement detection
+ mx2125/mx2125.ino - measure acceleration on two axes using MX2125 and print to serial
+ microphone/microphone.ino - print audio volume level to serial. Print "Sound" on loud sound.
+ ancient_chest/ancient_chest.ino - fingerprint unlocks chest
+ line_sensor/line_sensor.ino - print to serial if we are on a line
+
+## raspberrypi/ ##
+
+ hall_sensor/hall_sensor.py - print raw value and magnets pole
+ ky_026_flame/ky_026_flame.py - report presence of IR light from flame to serial
+ hall_switch/hall_switch.py - write to screen if magnet triggers the switch
+ mq_x_smoke_sensor/mq_x_smoke_sensor.py - print smoke level
+ wiichuck_adapter/wiichuck_adapter.py - print Wii Nunchuk acceleration and joystick
+ ldr/ldr.py - sense light level and print to screen
+ attopilot_voltage/attopilot_voltage.py - measure current and voltage with Attopilot 13.6V/45A
+ rfid_reader_simple/rfid_reader_simple.py - read 125 kHz RFID tags with ELB149C5M electronic brick without checking checksum
+ human_body_touch_sensor/human_body_touch_sensor.py - read touch information.
+ dht11_serial/dht11_serial.py - print humidity and temperature using DHT11 sensor
+ tilt_sensor/tilt_sensor.py - print if sensor was tilted
+ equalizer/equalizer.py - show equalizer based on microphone input
+ xy_joystick/xy_joystick.py - print KY 023 joystick tilt and button status
+ pot/pot.py - potentiometer with mcp3002
+ temperature_lm35/temperature_lm35.py - print temperature
+ adjustable-infrared-sensor-switch/adjustable-infrared-sensor-switch.py - read infrared switch
+ qt113/qt113.py - read touch information from QT113
+ botbook_mcp3002/botbook_mcp3002.py - read analog values from mcp3002
+ mq_3_alcohol_sensor_analog/mq_3_alcohol_sensor_analog.py - read analog value from alcohol sensor and print.
+ mq_3_alcohol_sensor/mq_3_alcohol_sensor.py - read digital output from alcohol sensor
+ keypad/keypad.py - read 16-key numeric keypad (dx.com sku 149608)
+ soil_humidity_sensor/soil_humidity_sensor.py - read soil humidity by measuring its resistance.
+ gy_65/gy_65.py - print altitude,pressure and temperature to serial
+ button/button.py - write to screen if button is down or up
+ led_hello/led_hello.py - light a LED using Raspberry Pi GPIO
+ botbook_gpio/botbook_gpio.py - gpio library.
+ lsm303/lsm303.py - normal use and calibration of LSM303DLH compass-accelerometer
+ distance_ping/distance_ping.py - print distance
+ diy_capacity_sensor_simple/diy_capacity_sensor_simple.py - read touch from diy capacity sensor.
+ color_sensor/color_sensor.py - sense color and print RGB value to serial
+ hc-sr04/hc-sr04.py - print distance to object in cm
+ mpu_6050/mpu_6050.py - print acceleration (m/s**2) and angular velocity (gyro, deg/s)
+ vibration_sensor/vibration_sensor.py - detect vibration
+ compound_eye/compound_eye.py - read distance and direction.
+ fingerprint_scanner/fingerprint_scanner.py - learn and recognize fingerprints with GT-511C3
+ pong/pong.py - play ball game classic with joystick and big screen
+ microswitch/microswitch.py - write to screen if switch is pressed or not
+ rfid_reader/rfid_reader.py - read 125 kHz RFID tags with ELB149C5M electronic brick
+ rotary_encoder/rotary_encoder.py - read rotary encoder
+ parallax_pir_reva/parallax_pir_reva.py - write to screen when movement detected
+ smoke_alarm/smoke_alarm.py - send email every 5 minutes when smoke is detected
+ flexiforce/flexiforce.py - sense force and print value to screen.
+ mx2125/mx2125.py - print acceleration axel values.
+ microphone/microphone.py - read sound from analog and print it
+ line_sensor/line_sensor.py - print to serial if we are on a line
+ voltage_record/voltage_record.py - record voltage from solar cell and print history to png
